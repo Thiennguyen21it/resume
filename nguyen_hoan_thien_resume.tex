@@ -1,0 +1,207 @@
+%-------------------------
+% Resume in Latex
+% Author : Nguyen Hoan Thien
+% Based on: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Nguyen Hoan Thien} \\ \vspace{1pt}
+    \small +84 356496977 $|$ \href{mailto:nguyenhoanthien1312@gmail.com}{\underline{nguyenhoanthien1312@gmail.com}} $|$ 
+    \href{https://github.com/Thiennguyen21it}{\underline{github.com/Thiennguyen21it}} $|$
+    Da Nang, Viet Nam
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+I'm a passionate and driven full-stack developer with a strong enthusiasm for programming and artificial intelligence. Currently, I am expanding my expertise in AI/ML, focusing on deep learning, natural language processing (NLP), and model deployment. I continuously strive to enhance my skills, stay updated with the latest technologies, and build innovative solutions that integrate AI into real-world applications.
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vietnam-Korea University of Information and Communication Technology (VKU)}{2021 -- 2026}
+      {Engineer in Global Information Technology}{GPA: 3.47/4.0}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Backend Developer}{August 2023 -- May 2024}
+      {SafeHorizons Software Services Co., Ltd}{Da Nang, Viet Nam}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained backend services using Python with frameworks such as Django REST framework}
+        \resumeItem{Designed and optimized RESTful APIs, ensuring high performance, scalability, and security}
+        \resumeItem{Worked with relational and NoSQL databases (PostgreSQL, Redis) to optimize queries and improve data retrieval speed}
+        \resumeItem{Followed Agile methodologies (Scrum), actively participating in daily stand-ups, sprint planning, and retrospectives}
+        \resumeItem{Collaborated effectively with frontend developers and other team members, providing API documentation and technical support}
+        \resumeItem{Used Git (GitHub/GitLab) for version control, ensuring clean code management and effective collaboration}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Emergix - Unified Emergency Operations \& Planning Platform}{November -- December 2024}
+      {The 33rd Vietnam IT Student Olympiad - PROCON VIETNAM}{Third Prize - Open Source Software Category}
+      \resumeItemListStart
+        \resumeItem{Participated in brainstorming and conceptualizing ideas for the competition}
+        \resumeItem{Analyzed, designed, and developed the Communities Module (one of the three core modules)}
+        \resumeItem{Developed the LLM Service using GPT API with RAG and FAISS as the Vector Database}
+        \resumeItem{Built the Notification Service using SMTP (email) and Twilio (SMS) for real-time alerts}
+        \resumeItem{Implemented containerization and deployment using Docker}
+        \resumeItem{Wrote comprehensive documentation for maintainability and knowledge sharing}
+        \resumeItem{\textbf{Technologies:} Appsmith, Strapi, Dify, SMTP, Twilio, Python, JavaScript/TypeScript}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {TBest\_Food - E-commerce Food Delivery Application}{January -- April 2023}
+      {Self-Initiated Project}{Solo Developer}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented the front-end using Flutter for cross-platform compatibility}
+        \resumeItem{Developed the backend with Laravel, implementing secure and efficient API communication}
+        \resumeItem{Integrated Firebase to enable real-time notifications for order status updates}
+        \resumeItem{Implemented core e-commerce features including shopping cart, order tracking, user authentication, and payment integration}
+        \resumeItem{Designed and developed an admin panel for managing orders, products, and user accounts}
+        \resumeItem{\textbf{Technologies:} Flutter, Laravel, Firebase, MySQL, Git \& GitHub}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: C/C++, Java, JavaScript, Dart, Python} \\
+     \textbf{AI/ML}{: Deep Learning, NLP, Transformer Models (PhoBERT, BERT), PyTorch, Scikit-learn} \\
+     \textbf{Frameworks/Platforms}{: Flutter, Django, Flask, FastAPI, ExpressJS, ReactJS} \\
+     \textbf{Tools/Source Control}{: Github, Gitlab, Figma, Docker} \\
+     \textbf{Database Management}{: MS SQL Server, MySQL, PostgreSQL, Firebase, MongoDB} \\
+     \textbf{IDEs/Text Editors}{: Visual Studio Code, NeoVim, Android Studio, Intellij IDE} \\
+     \textbf{Operating Systems}{: Windows, Linux (Ubuntu, Fedora)} \\
+     \textbf{Languages}{: Vietnamese (Native), English (TOEIC 765)}
+    }}
+ \end{itemize}
+
+%-----------AWARDS-----------
+\section{Honors \& Awards}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Third Prize - Open Source Software Category}{December 2024}
+      {The 33rd Vietnam IT Student Olympiad - PROCON VIETNAM}{}
+    \resumeSubheading
+      {Consolation Prize - VKU Robocar Innovation Contest}{May 2023}
+      {}{}
+    \resumeSubheading
+      {Third Prize - English Talent Competition VKU}{October 2022}
+      {}{}
+  \resumeSubHeadingListEnd
+
+%-----------INTERESTS-----------
+\section{Interests \& Activities}
+\resumeItemListStart
+    \resumeItem{Reading books, IT news and blogs to stay current with industry trends}
+    \resumeItem{Gaming and playing football in free time}
+    \resumeItem{Listening to music while coding}
+\resumeItemListEnd
+
+\end{document} 
