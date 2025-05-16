@@ -18,13 +18,14 @@ docker run --rm -i -v "$PWD":/data latex pdflatex nguyen_hoan_thien_resume.tex
 ```
 
 ### Preview
+
 Generate PNG file for preview
 
 ```sh
 docker run --rm -i -v "$PWD":/data dpokidov/imagemagick convert -density 300 /data/nguyen_hoan_thien_resume.pdf -quality 90 -background white -alpha remove -alpha off /data/HoanThien-Nguyen-CV.png
 ```
 
-![Resume Screenshot](/HoanThien-Nguyen-CV.png)
+<!-- ![Resume Screenshot](/HoanThien-Nguyen-CV.png) -->
 
 ### License
 
