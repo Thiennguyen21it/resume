@@ -15,6 +15,13 @@ Archieve/
 *.cb2
 .*.lb
 *.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.ico
 
 # github action result
 semicolon_delimited_script
